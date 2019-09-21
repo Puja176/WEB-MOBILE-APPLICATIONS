@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+</head>
+<body>
+<div class="container align-middle h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <h1>Calculator to perform basic operations</h1>
+  </div>
+  <div class="row h-100 justify-content-center align-items-center calculatorCenter">
+  <div class="border border-dark col-sm-3">
+    <div class="row border border-dark " style="background-color: lightgrey">
+      <div class="col-sm-12 text-right">
+        <h4>{{currentNumber}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('1')">1</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('2')">2</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('3')">3</button>
+      <button class="btn btn-danger col-sm-3 border border-dark" (click)="operation('/')">/</button>
+    </div>
+    <div class="row border border-dark">
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('4')">4</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('5')">5</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('6')">6</button>
+      <button class="btn btn-danger col-sm-3 border border-dark" (click)="operation('*')">*</button>
+    </div>
+    <div class="row border border-dark">
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('7')">7</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('8')">8</button>
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('9')">9</button>
+      <button class="btn btn-danger col-sm-3 border border-dark" (click)="operation('+')">+</button>
+    </div>
+    <div class="row border border-dark">
+      <button class="btn btn-info col-sm-3 border border-dark" (click)="num('0')">0</button>
+      <button class="btn btn-success col-sm-3 border border-dark" (click)="operation('=')">=</button>
+      <button class="btn btn-block col-sm-3 border border-dark" (click)="clear()">C</button>
+      <button class="btn btn-danger col-sm-3 border border-dark" (click)="operation('-')">-</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
