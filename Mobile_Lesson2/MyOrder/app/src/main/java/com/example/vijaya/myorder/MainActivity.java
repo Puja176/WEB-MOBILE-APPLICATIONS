@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("message/rfc822");
-        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"sai.puja176@gmail.com"});
+        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"movvathoshita@gmail.com"});
         i.putExtra(Intent.EXTRA_SUBJECT, "subject is project");
         i.putExtra(Intent.EXTRA_TEXT   , finalMessage);
         try {
